@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
+        }
+        .hero {
+            background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+            color: #fff;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        }
+        .product-card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        }
+        .footer {
+            background: #2575fc;
+            color: #fff;
+            padding: 1.5rem 0 0.5rem 0;
+            border-radius: 1.5rem 1.5rem 0 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-bag-check"></i> E-Commerce</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html"><i class="bi bi-person-circle"></i> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container my-5">
+        <div class="hero p-5 mb-5 text-center">
+            <h1 class="display-4 fw-bold mb-3">Welcome to E-Commerce</h1>
+            <p class="lead mb-4">Discover the best products at unbeatable prices. Shop now and enjoy fast delivery, secure checkout, and top-notch customer service!</p>
+            <a href="#products" class="btn btn-light btn-lg px-4 fw-semibold shadow-sm">Shop Now <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="container pb-5" id="products">
+        <h2 class="mb-4 text-center fw-bold">Our Products</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="product-card card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top rounded-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text text-primary fw-semibold">$19.99</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-success btn-sm"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-eye"></i> View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col">
+                <div class="product-card card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top rounded-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text text-primary fw-semibold">$29.99</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-success btn-sm"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-eye"></i> View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col">
+                <div class="product-card card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top rounded-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text text-primary fw-semibold">$39.99</p>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-success btn-sm"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+                            <a href="#" class="btn btn-outline-primary btn-sm"><i class="bi bi-eye"></i> View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container text-center">
+            <div class="mb-2">
+                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            </div>
+            <div>
+                &copy; 2024 E-Commerce. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
